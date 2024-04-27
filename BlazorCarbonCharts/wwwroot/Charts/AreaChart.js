@@ -13,9 +13,9 @@ export function createChart(element) {
 
     console.log(chart);
 
-    setTimeout(() => {
-        chart.destroy();
-    }, 5000);
+    //setTimeout(() => {
+    //    chart.destroy();
+    //}, 5000);
 }
 
 export function updateChart(data) {

@@ -18,7 +18,7 @@ public abstract class CarbonChartComponentBase : ComponentBase, IAsyncDisposable
     /// <summary>
     /// Gets the path to the components directory.
     /// </summary>
-    protected const string COMPONENTS_PATH = "./_content/BlazorCarbonCharts/Components";
+    private const string COMPONENTS_PATH = "./_content/BlazorCarbonCharts/Charts";
 
     /// <summary>
     /// Gets the reference to the component element.
@@ -66,7 +66,7 @@ public abstract class CarbonChartComponentBase : ComponentBase, IAsyncDisposable
         builder.OpenElement(seq, "div");
         builder.AddAttribute(++seq, "id", Id);
         builder.AddAttribute(++seq, "class", Class);
-        builder.AddAttribute(++seq, "style", Style);
+        builder.AddAttribute(++seq, "style", "width: 300px;");
         builder.AddMultipleAttributes(++seq, AdditionalAttributes);
         builder.AddElementReferenceCapture(++seq, (element) => _ref = element);
         builder.CloseElement();
@@ -81,12 +81,12 @@ public abstract class CarbonChartComponentBase : ComponentBase, IAsyncDisposable
     {
         if (firstRender)
         {
-            //var componentName = GetType().Name;
-            //var modulePath = $"{COMPONENTS_PATH}/{componentName}/{componentName}.cs.js";
+            var componentName = GetType().Name;
+            var modulePath = $"{COMPONENTS_PATH}/{componentName}.js";
 
-            //Module ??= await JSRuntime.InvokeAsync<IJSObjectReference>("import", modulePath);
+            Module ??= await JSRuntime.InvokeAsync<IJSObjectReference>("import", modulePath);
 
-            //await Module.InvokeVoidAsync("createChart", _ref);
+            await Module.InvokeVoidAsync("createChart", _ref);
         }
     }
 
