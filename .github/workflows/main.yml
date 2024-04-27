@@ -22,6 +22,9 @@ jobs:
     - name: 🏗️ Build stories
       run: dotnet publish BlazorCarbonCharts.Stories.Wasm/BlazorCarbonCharts.Stories.Wasm.csproj -c Release -o public -p GHPages=true
 
+    - name: 🌍 Set base path
+      run: sed -i 's|<base href="/" />|<base href="/BlazorCarbonChartsPublishTest/" />|g' ./build/wwwroot/index.html
+
     - name: 🚀 Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
