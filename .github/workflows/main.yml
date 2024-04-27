@@ -1,0 +1,31 @@
+name: 🚀 Deploy to GitHub pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 📥 Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: "8.0.x"
+        dotnet-quality: "preview"
+
+    - name: Install .NET WebAssembly Tools
+      run: dotnet workload install wasm-tools
+
+    - name: 🏗️ Build stories
+      run: dotnet publish BlazorCarbonCharts.Stories.Wasm/BlazorCarbonCharts.Stories.Wasm.csproj -c Release -o public -p GHPages=true
+
+    - name: 🚀 Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        publish_dir: public/wwwroot
+        force_orphan: true
+        
