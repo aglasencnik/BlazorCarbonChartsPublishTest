@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlazorCarbonCharts.Stories.Shared\BlazorCarbonCharts.Stories.Shared.csproj" />
-    <ProjectReference Include="..\BlazorCarbonCharts\BlazorCarbonCharts.csproj" />
   </ItemGroup>
 
 </Project>
