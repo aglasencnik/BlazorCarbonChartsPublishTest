@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlazorCarbonCharts</name>
+    </assembly>
+    <members>
+        <member name="T:BlazorCarbonCharts.Components.AlluvialChart">
+            <summary>
+            Represents an alluvial chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.AreaChart">
+            <summary>
+            Represents a simple area chart chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.StackedAreaChart">
+            <summary>
+            Represents a stacked area chart chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.BarChart">
+            <summary>
+            Represents a simple bar chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.FloatingBarChart">
+            <summary>
+            Represents a floating bar chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.GroupedBarChart">
+            <summary>
+            Represents a grouped bar chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.StackedBarChart">
+            <summary>
+            Represents a stacked bar chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.CarbonChartComponentBase">
+            <summary>
+            Represents the base class for all Carbon Chart components.
+            </summary>
+        </member>
+        <member name="P:BlazorCarbonCharts.Components.CarbonChartComponentBase.JSRuntime">
+            <summary>
+            Gets the JavaScript runtime.
+            </summary>
+        </member>
+        <member name="F:BlazorCarbonCharts.Components.CarbonChartComponentBase.COMPONENTS_PATH">
+            <summary>
+            Gets the path to the components directory.
+            </summary>
+        </member>
+        <member name="F:BlazorCarbonCharts.Components.CarbonChartComponentBase._ref">
+            <summary>
+            Gets the reference to the component element.
+            </summary>
+        </member>
+        <member name="P:BlazorCarbonCharts.Components.CarbonChartComponentBase.Module">
+            <summary>
+            Gets or sets the JavaScript module reference.
+            </summary>
+        </member>
+        <member name="P:BlazorCarbonCharts.Components.CarbonChartComponentBase.Id">
+            <summary>
+            Gets or sets the unique identifier.
+            The value will be used as the HTML <see href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id">global id attribute</see>.
+            </summary>
+        </member>
+        <member name="P:BlazorCarbonCharts.Components.CarbonChartComponentBase.Class">
+            <summary>
+            Optional CSS class names. If given, these will be included in the class attribute of the component.
+            </summary>
+        </member>
+        <member name="P:BlazorCarbonCharts.Components.CarbonChartComponentBase.Style">
+            <summary>
+            Optional in-line styles. If given, these will be included in the style attribute of the component.
+            </summary>
+        </member>
+        <member name="P:BlazorCarbonCharts.Components.CarbonChartComponentBase.AdditionalAttributes">
+            <summary>
+            Gets or sets a collection of additional attributes that will be applied to the created element.
+            </summary>
+        </member>
+        <member name="M:BlazorCarbonCharts.Components.CarbonChartComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+            <summary>
+            Builds the render tree for the Carbon Chart component.
+            </summary>
+            <param name="builder">RenderTreeBuilder object.</param>
+        </member>
+        <member name="M:BlazorCarbonCharts.Components.CarbonChartComponentBase.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            Initializes the Carbon Chart component.
+            </summary>
+            <param name="firstRender">Whether it is the first render.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
+        </member>
+        <member name="M:BlazorCarbonCharts.Components.CarbonChartComponentBase.DisposeAsync">
+            <summary>
+            Disposes the Carbon Chart component.
+            </summary>
+            <returns>ValueTask</returns>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.BoxplotChart">
+            <summary>
+            Represents a boxplot chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.BubbleChart">
+            <summary>
+            Represents a bubble chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.BulletChart">
+            <summary>
+            Represents a bullet chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.ChoroplethChart">
+            <summary>
+            Represents a choropleth chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.CirclePackChart">
+            <summary>
+            Represents a circle pack chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.ComboChart">
+            <summary>
+            Represents a combo chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.DonutChart">
+            <summary>
+            Represents a donut chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.GaugeChart">
+            <summary>
+            Represents a gauge chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.HeatmapChart">
+            <summary>
+            Represents a heatmap chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.HistogramChart">
+            <summary>
+            Represents a histogram chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.LineChart">
+            <summary>
+            Represents a line chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.LollipopChart">
+            <summary>
+            Represents a lollipop chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.MeterChart">
+            <summary>
+            Represents a meter chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.ProportionalMeterChart">
+            <summary>
+            Represents a proportional meter chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.PieChart">
+            <summary>
+            Represents a pie chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.RadarChart">
+            <summary>
+            Represents a radar chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.ScatterChart">
+            <summary>
+            Represents a scatter chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.SparklineChart">
+            <summary>
+            Represents a sparkline chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.StepChart">
+            <summary>
+            Represents a step chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.TreeChart">
+            <summary>
+            Represents a tree chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.TreemapChart">
+            <summary>
+            Represents a treemap chart.
+            </summary>
+        </member>
+        <member name="T:BlazorCarbonCharts.Components.WordCloudChart">
+            <summary>
+            Represents a word cloud chart.
+            </summary>
+        </member>
+    </members>
+</doc>
